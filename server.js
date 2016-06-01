@@ -116,11 +116,11 @@ var first_data = [
 ]
 app.get("/", function(req, res){
   res.setHeader('Content-Type', 'application/json');
-  res.json(first_data);
+  res.json({response: first_data});
 });
 app.get("/schema", function(req, res){
   res.setHeader('Content-Type', 'application/json');
-  res.json(schema);
+  rres.json({response: schema});
 });
 
 
